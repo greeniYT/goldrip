@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Byte Lounge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-header">
+    <h1>Byte Lounge</h1>
+    <input type="text" id="username-input" placeholder="Enter your name">
+    <button id="join-btn">Join</button>
+  </header>
+
+  <aside id="sidebar">
+    <section id="friends-list">
+      <h2>Friends</h2>
+    </section>
+    <section id="chat-panel">
+      <h2>Chat</h2>
+      <div id="chat-log"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="send-btn">Send</button>
+    </section>
+  </aside>
+
+  <main id="lounge-area">
+    <section id="room"></section>
+  </main>
+
+  <div id="game-modal" class="hidden">
+    <div class="modal-content">
+      <h2>Mini Game</h2>
+      <canvas id="game-canvas"></canvas>
+      <button id="close-game">Close</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
